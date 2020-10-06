@@ -1,0 +1,5 @@
+[azurevm]
+20.57.168.236
+
+[all:vars]
+ansible_user=azureuser

@@ -1,0 +1,9 @@
+---
+- name: war deployment playbook
+  hosts: azurevm
+  vars:
+   - warName: SimpleTomcatWebApp.war
+  tasks:
+   - copy:
+        src: "./target/{{ warName }}"
+        dest: "/usr/share/tomcat/webapps"
